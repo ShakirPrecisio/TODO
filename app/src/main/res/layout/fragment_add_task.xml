@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".dashboard.AddTaskFragment"
+    >
+
+
+
+    <TextView
+        android:id="@+id/actionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:letterSpacing="0.07"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="2dp"
+        android:text="New Task" />
+
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="12dp"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:letterSpacing="0"
+        android:text="Name"
+        android:layout_marginStart="16dp"
+        android:textColor="#BAC0C6"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actionText"
+        />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textSize="18sp"
+        android:fontFamily="@font/lato"
+        android:textColor="#0B243E"
+        android:textColorHint="#BAC0C6"
+        android:paddingBottom="16dp"
+        android:background="@drawable/edt_bg_selector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        android:imeOptions="actionDone|flagNoExtractUi"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:letterSpacing="0"
+        android:text="Description"
+        android:layout_marginStart="16dp"
+        android:textColor="#BAC0C6"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editName"
+        />
+
+
+    <EditText
+        android:id="@+id/editDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textSize="18sp"
+        android:fontFamily="@font/lato"
+        android:textColor="#0B243E"
+        android:textColorHint="#BAC0C6"
+        android:paddingBottom="16dp"
+        android:background="@drawable/edt_bg_selector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+        android:imeOptions="actionDone|flagNoExtractUi"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:letterSpacing="0"
+        android:text="Date"
+        android:layout_marginStart="16dp"
+        android:textColor="#BAC0C6"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDescription"
+        />
+
+
+    <TextView
+        android:id="@+id/tvDateValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:letterSpacing="0"
+        android:text=""
+        android:paddingTop="2dp"
+        android:paddingBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:textColor="#0B243E"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate"
+        />
+
+
+    <View
+        android:id="@+id/editDate"
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_height="4px"
+        android:background="@drawable/edt_bg_selector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateValue"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:letterSpacing="0"
+        android:text="Time"
+        android:layout_marginStart="16dp"
+        android:textColor="#BAC0C6"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDate"
+        />
+
+
+    <TextView
+        android:id="@+id/tvTimeValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:letterSpacing="0"
+        android:text=""
+        android:paddingTop="2dp"
+        android:paddingBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:textColor="#0B243E"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTime"
+        />
+
+
+    <View
+        android:id="@+id/editTime"
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_height="4px"
+        android:background="@drawable/edt_bg_selector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTimeValue"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/continueButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:layout_marginTop="32dp"
+        android:text="Add "
+        app:cornerRadius="26dp"
+        android:letterSpacing="0"
+        app:rippleColor="#D9DFEC"
+        app:backgroundTint="@color/button_color_2"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTime"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
